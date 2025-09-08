@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { BookOpen, UserCheck, ShieldCheck } from "lucide-react"
 import React from "react"
+import { publicUrl } from "./PublicUrl"
 
 type TherapyBannerParallaxSectionProps = {
   scrollToSection: (ref: React.RefObject<HTMLDivElement | null>) => void
@@ -23,7 +24,7 @@ export default function TherapyBannerParallaxSection({
           className="parallax-image absolute inset-0 bg-cover bg-center bg-no-repeat"
           data-speed={0.2}
           style={{
-            backgroundImage: `url(/hero-psychologist.jpg)`,
+            backgroundImage: `url(${publicUrl("/hero-psychologist.jpg")})`,
             willChange: "transform",
           }}
         />

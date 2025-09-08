@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  // Add if using custom directories
-  experimental: {
-    appDir: true
-  }
-}
+const isProd = process.env.NODE_ENV === 'production';
+const repoName = "LandingPage_Psicologia_Pedro"; // nome exato do seu repositório
 
-module.exports = nextConfig
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: { unoptimized: true },
+  basePath: isProd ? `/${repoName}` : '',
+  assetPrefix: isProd ? `/${repoName}/` : '',
+  // Remova swcMinify e experimental.appDir!
+  reactStrictMode: true,
+};
+
+module.exports = nextConfig;

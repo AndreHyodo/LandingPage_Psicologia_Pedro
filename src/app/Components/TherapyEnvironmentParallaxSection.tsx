@@ -3,11 +3,12 @@
 import React from "react";
 import ParallaxSection from "./ParallaxSection"; 
 import { Button } from "@/components/ui/button" 
+import { publicUrl } from "./PublicUrl";
 
 export default function MeditationRoomParallaxSection() {
   return (
     <ParallaxSection
-      image="/meditation-room.jpg"
+      image={publicUrl("/meditation-room.jpg")}
       title="Comece sua jornada"
       subtitle="Dê o primeiro passo rumo ao bem-estar hoje"
       speed={0.4}

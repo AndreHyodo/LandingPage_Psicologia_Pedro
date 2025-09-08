@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button"
+import { publicUrl } from "./PublicUrl";
 
 const ParallaxSection = ({ 
     image, 
@@ -23,7 +24,7 @@ const ParallaxSection = ({
         className="parallax-image absolute inset-0 bg-cover bg-center bg-no-repeat"
         data-speed={speed}
         style={{ 
-          backgroundImage: `url(${image})`,
+          backgroundImage: `url(${publicUrl(image)})`,
           willChange: 'transform'
         }}
       />

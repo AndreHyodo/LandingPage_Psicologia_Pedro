@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from "react"
 import TherapyEnvironmentParallaxSection from "./Components/TherapyEnvironmentParallaxSection"
 import TherapyBannerParallaxSection from "./Components/TherapyBannerParallaxSection"
 import { TherapyContactParallaxSection } from "./Components/TherapyContactParallaxSection"
+import { publicUrl } from "./Components/PublicUrl"
 
 export default function Home() {
   const heroRef = useRef<HTMLDivElement | null>(null)
@@ -78,14 +79,14 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
             <NextImage
-              src="/icons/psychology.png"           // arquivo em public/icons/Psy.png
+              src={publicUrl("/icons/psychology.png")}
               alt="Símbolo de Psicologia"
               width={32}
               height={32}
               className="h-8 w-8 object-contain filter brightness-0 invert"
               priority
             />
-              <span className="text-xl font-bold text-white">Pedro Salles </span>
+              <span className="text-xl font-bold text-white">Pedro Sales </span>
             </div>
             <div className="hidden md:flex items-center gap-6">
               <button onClick={() => scrollToSection(heroRef)} className="text-white/80 hover:text-white transition-colors">
@@ -123,7 +124,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 fade-in">
               <div className="space-y-2">
-                <Badge variant="outline" className="bg-blue-50 text-blue-600">Sobre Pedro Salles </Badge>
+                <Badge variant="outline" className="bg-blue-50 text-blue-600">Sobre Pedro Sales </Badge>
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                   Psicologia Aplicada
                 </h2>
@@ -402,7 +403,7 @@ export default function Home() {
                     icon: Mail,
                     color: "green",
                     title: "E-mail",
-                    content: "dr.sarah@therapy.com"
+                    content: "pedro_sales@therapy.com"
                   },
                   {
                     icon: MapPin,
@@ -488,7 +489,7 @@ export default function Home() {
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <Brain className="h-8 w-8 text-blue-400" />
-                <span className="text-xl font-bold">Dra. Sarah Johnson</span>
+                <span className="text-xl font-bold">Pedro Sales</span>
               </div>
               <p className="text-gray-300">
                 Serviços psicológicos profissionais para indivíduos, casais e famílias.
@@ -516,7 +517,7 @@ export default function Home() {
               <h4 className="font-semibold">Informações de Contato</h4>
               <div className="space-y-2 text-gray-300">
                 <p>(555) 123-4567</p>
-                <p>dr.sarah@therapy.com</p>
+                <p>pedro_sales@therapy.com</p>
                 <p>123 Wellness Street<br />San Francisco, CA 94102</p>
               </div>
             </div>
