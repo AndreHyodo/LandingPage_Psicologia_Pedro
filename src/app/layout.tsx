@@ -15,20 +15,20 @@ const robotoMono = Roboto_Mono({
 
 
 export const metadata: Metadata = {
-  title: "Pedro Salles Landing Page",
+  title: "Pedro Sales Landing Page",
   description: "Professional Landing Page for a psychologist.",
   keywords: [ "Next.js", "TypeScript", "Tailwind CSS", "React"],
   authors: [{ name: "André Hyodo" }],
   openGraph: {
-    title: "Pedro Salles Landing Page",
+    title: "Pedro Sales Landing Page",
     description: "Professional Landing Page for a psychologist.",
     // url: "",
-    siteName: "Pedro Salles Landing Page",
+    siteName: "Pedro Sales Landing Page",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pedro Salles Landing Page",
+    title: "Pedro Sales Landing Page",
     description: "Professional Landing Page for a psychologist.",
   },
 };

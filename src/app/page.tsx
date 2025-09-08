@@ -149,7 +149,7 @@ export default function Home() {
             <div className="relative">
               <div className="scale-on-scroll rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="/therapy-session.jpg" 
+                  src={publicUrl("/meditation-room.jpg")}
                   alt="Sessão de Terapia" 
                   className="w-full h-96 object-cover"
                 />
