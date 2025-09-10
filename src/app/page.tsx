@@ -72,18 +72,19 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden">
       {/* Navegação */}
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrollY > 100 ? 'bg-black/80 backdrop-blur-md' : 'bg-transparent'
-      }`}>
-        <div className="container mx-auto px-4 py-4">
+      <nav className={
+        `fixed top-1 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full 
+        ${scrollY > 100 ? 'bg-black/80 backdrop-blur-md shadow-lg w-[70vw]' : 'bg-transparent w-full '}
+        `}>
+        <div className="container mx-auto px-10 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
             <NextImage
-              src={publicUrl("/icons/psychology.png")}
+              src={publicUrl("/icons/favicon.ico")}
               alt="Símbolo de Psicologia"
               width={32}
               height={32}
-              className="h-8 w-8 object-contain filter brightness-0 invert"
+              className="h-10 w-10 object-contain filter brightness-0 invert"
               priority
             />
               <span className="text-xl font-bold text-white">Pedro Sales </span>
